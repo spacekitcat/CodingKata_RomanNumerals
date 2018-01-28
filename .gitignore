@@ -1,0 +1,6 @@
+.gradle/
+out/
+build/
+*.log
+all_answers_output.txt
+.idea/
