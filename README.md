@@ -7,6 +7,7 @@ Author: Lisa Burton
 - [Question 1](./docs/question_one)
 - [Question 2](./docs/question_two)
 - [Question 3](./docs/question_three)
+- [Question 4](./docs/question_four)
 
 ## Technical overview
 
