@@ -4,10 +4,10 @@ Author: Lisa Burton
 
 ## Technical questions
 
-- [Question 1](./docs/question_one)
-- [Question 2](./docs/question_two)
-- [Question 3](./docs/question_three)
-- [Question 4](./docs/question_four)
+- [Question 1](./docs/question_one.md)
+- [Question 2](./docs/question_two.md)
+- [Question 3](./docs/question_three.md)
+- [Question 4](./docs/question_four.md)
 
 ## Technical overview
 
