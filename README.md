@@ -137,6 +137,6 @@ The executable should be ran with a list of at least 1 integer between 1 and 399
 Example:
 
 ```bash
-> java -jar LisaBurton_CodingKata_RomanNumerals-0.0.1.jar 42 43 44 45**  
+> java -jar ./build/libs/LisaBurton_CodingKata_RomanNumerals-0.0.1.jar 42 43 44 45
 XLII XLIII XLIV XLV
 ```
