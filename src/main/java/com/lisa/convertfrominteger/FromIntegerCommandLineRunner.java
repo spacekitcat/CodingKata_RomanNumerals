@@ -42,18 +42,25 @@ public class FromIntegerCommandLineRunner implements ApplicationRunner {
         return integerList;
     }
 
+    private boolean validateApplicationArguments(ApplicationArguments args) {
+        return !args.getNonOptionArgs().isEmpty() &&
+                !(args.getNonOptionArgs().size() == 1 && args.getNonOptionArgs().get(0).trim().isEmpty());
+    }
+
+    private boolean validateIntegerForConversion(Integer inputInteger) {
+        return inputInteger >= fromIntegerConfiguration.getMinimumInputInteger() &&
+                            inputInteger <= fromIntegerConfiguration.getMaximumInputInteger();
+    }
+
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        if (args.getNonOptionArgs().isEmpty() ||
-                (args.getNonOptionArgs().size() == 1 && args.getNonOptionArgs().get(0).trim().isEmpty())) {
+        if (!validateApplicationArguments(args)) {
             System.out.println(applicationMessagesConfiguration.getMessage(APP_INPUT_ERROR_KEY));
         } else {
             List<Integer> integerList = new ArrayList<>();
             try {
-                for (Integer nextInput : convertArgumentsToIntegers((args))) {
-                    if (nextInput < fromIntegerConfiguration.getMinimumInputInteger() ||
-                            nextInput > fromIntegerConfiguration.getMaximumInputInteger()) {
-
+                for (Integer nextInput : convertArgumentsToIntegers(args)) {
+                    if (!validateIntegerForConversion(nextInput)) {
                         integerList.clear();
                         System.err.print(applicationMessagesConfiguration.getMessage(APP_INPUT_ERROR_KEY));
                     } else {

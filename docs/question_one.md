@@ -4,8 +4,10 @@
 > Please give an example of a software component you have designed and written from concept
 > to deployment, outlining the steps you took.  
 > (1000 character limit):
-  
-To give a little bit of a background, my team recently started a large project to replace a large, monolithic legacy web application with a micro service architecture. The team I'm a member of is usually divided into two or three smaller autonomous groups on an ad hoc basis. I've been working with 2 other developers to design and implement the new micro services, while the other 3 other developers on my team have been working with a 3rd party vendor to design and build a lightweight frontend to consume the new services.  
+
+*I struggled to decide whether or not I should update this answer from my original application to something from my current role at the BBC, but while I've worked on plenty of interesting projects that could easily fulfil this question, this is still the project I'm most proud of in my career. I can talk all day about my BBC projects in an interview.*
+
+To give a little bit of a background, my team at the time had started a large project to replace a large, monolithic legacy web application with a micro service architecture. The team I'm a member of is usually divided into two or three smaller autonomous groups on an ad hoc basis. I've been working with 2 other developers to design and implement the new micro services, while the other 3 other developers on my team have been working with a 3rd party vendor to design and build a lightweight frontend to consume the new services.  
   
 The component I mentioned earlier provides a REST API for finding and accessing legal and marketing documents for each of the policy configurations we offer. I was responsible for designing and developing this component, although the lead developer did offer his input along with code reviews. I worked very closely with the other two developers to ensure that the new services provided a consistent interface as well as using common core technologies such as Spring Boot, Hibernate, Swagger etc.  
   
